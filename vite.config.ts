@@ -5,9 +5,9 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
-import process from "process";
-import path from "path";
-import fs from "fs";
+import process from "node:process";
+import path from "node:path";
+import fs from "node:fs";
 
 const rootDir = process.cwd();
 const pathSrc = path.resolve(__dirname, "src");
